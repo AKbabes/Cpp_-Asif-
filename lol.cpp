@@ -1,9 +1,18 @@
 #include<iostream>
+#include<cstring>
 #include"IO.h"
 using namespace std;
 int main(){
 	inout();
-	int a,b;
-	cin>>a>>b;
-	cout<<a+b<<endl;
+	string s;
+	int n;
+	while(cin>>s){
+		cin>>n;
+		for(int i=0;i<n;i++){
+			int num;
+			cin>>num;
+			cout<<s[num-1];
+		}
+		cout<<endl;
+	}
 }
